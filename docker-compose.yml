@@ -18,7 +18,7 @@ services:
       - db_network
 
   postgres:
-    image: postgres:16
+    image: postgres:18
     container_name: ${POSTGRES_SERVER:-postgres}
     restart: unless-stopped
     environment:
